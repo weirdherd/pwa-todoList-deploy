@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Must match the setting in manifest.json file -->
+    <meta name="theme-color" content="#3377ff" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"
+    />
+    <!-- maximum-scale must be set for passing lighthouse PWA checking -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List PWA App</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Todo List</h1>
+      <input id="task" /><button id="add">Add Task</button>
+      <!-- <hr> -->
+      <div id="todos"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
